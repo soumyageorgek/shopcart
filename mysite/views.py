@@ -34,10 +34,8 @@ def color(request):
 
     adjmat = adj_matrix(list1)
     color = find_color(adjmat)
-    fin_color = [0]*len(list1)
-    for x in color:
-      fin_color[x] = color[x]
-    return fin_color
+    return color.values()
+
   str1 = request.POST.get('name', '')
   fin_color = map_color(eval(str1))
   return HttpResponse(str(fin_color))
