@@ -72,15 +72,15 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
     #'django.middleware.csrf.CsrfResponseMiddleware'
-    'django.contrib.csrf.middleware.CsrfViewMiddleware',
-    'django.contrib.csrf.middleware.CsrfResponseMiddleware',
+    #'django.contrib.csrf.middleware.CsrfViewMiddleware',
+    #'django.contrib.csrf.middleware.CsrfResponseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
 ROOT_URLCONF = 'mysite.urls'
 
-TEMPLATE_DIRS = ('/media/SOUMYA/shopcart/mysite/template'
+TEMPLATE_DIRS = ('/media/SOUMYA/Django_coloring/mysite/template'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.

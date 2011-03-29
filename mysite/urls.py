@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from mysite.views import hello, show_color, post_comment, login, set_color, current_datetime, register, logout, add
+from mysite.views import color #hello, show_color, post_comment, login, set_color, current_datetime, register, logout, add, color
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
@@ -13,14 +13,15 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # (r'^admin/', include(admin.site.urls)),
-    ('^hello/$', hello),
-    ('^show/$', show_color),
-    ('^set/$', set_color),
-    ('^post/$', post_comment),
-    (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/media/SOUMYA/shopcart/mysite/static/', 'show_indexes': True}),
-    ('^login/$', login),
-    ('^logout/$', logout),
-    ('^time/$', current_datetime),
-    ('^register/$', register),
-    ('^add/$', add),
+    #('^hello/$', hello),
+    #('^show/$', show_color),
+    #('^set/$', set_color),
+    #('^post/$', post_comment),
+    (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/media/SOUMYA/Django_coloring/mysite/static/', 'show_indexes': True}),
+    #('^login/$', login),
+    #('^logout/$', logout),
+    #('^time/$', current_datetime),
+    #('^register/$', register),
+    #('^add/$', add),
+    ('^color/', color),
 )
